@@ -10,6 +10,34 @@ A starting point for Neovim that is:
 
 **NOT** a Neovim distribution, but instead a starting point for your configuration.
 
+## My Setup: Tokyo Night + React / TypeScript / Tailwind
+
+Colorscheme is `tokyonight-night`. Opening a `.ts`, `.tsx`, `.js`, `.jsx` or `.css` file gives
+suggestions from `ts_ls`, `tailwindcss`, `eslint`, `cssls`, `html` and `jsonls` (installed automatically by Mason).
+Files are formatted with Prettier on save, and HTML/JSX tags auto close and auto rename (`nvim-ts-autotag`).
+
+Needs `node`/`npm` (for the language servers) and the [Claude Code CLI](https://docs.claude.com/en/docs/claude-code) (`claude`) for the AI keys.
+
+`<leader>` is the space bar.
+
+| Keys | What it does |
+| --- | --- |
+| `<leader>sg` | Search for a word/text in all files |
+| `<leader>sw` | Search for the word under the cursor |
+| `<leader>sf` or `Ctrl-p` | Search for files by name |
+| `<leader>e` | Toggle the file explorer (Neo-tree) |
+| `\` | Reveal current file in the file explorer |
+| `<leader>gs` | Git status |
+| `<leader>gc` | Git commit all changes (asks for a message) |
+| `<leader>gb` | Create and switch to a new git branch |
+| `<leader>gB` | Switch to an existing branch |
+| `<leader>gp` | Git push current branch to origin |
+| `<leader>gl` | Git pull |
+| `<leader>ac` | Open/close Claude Code |
+| `<leader>as` | (visual mode) Send selection to Claude |
+| `<leader>ab` | Add current file to Claude's context |
+| `<leader>aa` / `<leader>ad` | Accept / deny a change Claude proposes |
+
 ## Installation
 
 ### Install Neovim

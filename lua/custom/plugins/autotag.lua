@@ -1,0 +1,17 @@
+-- Auto close and auto rename HTML / JSX / TSX tags
+-- Typing `<div>` inserts `</div>`, and renaming the opening tag renames the closing one.
+-- https://github.com/windwp/nvim-ts-autotag
+
+---@module 'lazy'
+---@type LazySpec
+return {
+  'windwp/nvim-ts-autotag',
+  event = { 'BufReadPre', 'BufNewFile' },
+  opts = {
+    opts = {
+      enable_close = true, -- Auto close tags
+      enable_rename = true, -- Auto rename pairs of tags
+      enable_close_on_slash = true, -- Auto close on trailing </
+    },
+  },
+}
